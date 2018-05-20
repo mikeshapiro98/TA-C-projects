@@ -277,7 +277,7 @@ namespace CS_Exercise_3_while_statements
                     case "South Africa":
                         Console.WriteLine(" ");
                         System.Threading.Thread.Sleep(500);
-                        Console.WriteLine("Did you know that the world’s largest diamond was found in the Premier Mine in Pretoria, South Africa on 25 January 1905.");
+                        Console.WriteLine("Did you know that the world’s largest diamond was found in the Premier Mine in Pretoria, South Africa on \n25 January 1905.");
                         Console.WriteLine(" ");
                         System.Threading.Thread.Sleep(1000);
                         Console.WriteLine("Would you like to know a fact about another country?");
