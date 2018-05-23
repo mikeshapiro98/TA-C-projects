@@ -11,24 +11,41 @@ namespace Exercise_6_Iterations
         static void Main(string[] args)
         {
 
-            // //INTRODUCTION
+            //INTRODUCTION
             Console.WriteLine("Hello. This is a program that meant to show the use of iteration in C#. Press Enter to start.");
             Console.ReadLine();
             //END INTRODUCTION
 
             //FIRST REQUIREMENT ADD USER STRINGS TOGETHER
 
-            string[] stringAdds = new string[] { "This is an \t  | ", "array of stings   | ", "that will be \t  | ", "presented with the| ", "user input at \t  | ", "the end of \t  | ", "every three words | ", "Your input was: " };
-
+            string[] stringAdds = { "This is an \t  | ", "array of stings   | ", "that will be \t  | ", "presented with the| ", "user input at \t  | ", "the end of \t  | ", "every three words | ", "Your input was: " };
+            //string[] newUserString = new string[] { };
             Console.WriteLine("Add some text and press enter to have that text added to an array or strings and printed. Then press enter");
             string userString = Console.ReadLine();
             //List<string> newUserString = new List<string>(); FOR REFERANCE PURPOSES
 
             for (int i = 0; i < stringAdds.Length; i++)
             {
-                //newUserString.Add(stringAdds[i] + userString);  FOR REFERANCE PURPOSES
-                Console.WriteLine(stringAdds[i] + userString);
+                Console.WriteLine(stringAdds[i]);
             }
+
+            // foreach (var adders in stringAdds)
+            for (int i = 0; i < stringAdds.Length; i++)
+            {
+
+                stringAdds[i] = (stringAdds[i] + userString);
+                Console.WriteLine(stringAdds[i]);
+
+
+                //newUserString[i] + userString;  //FOR REFERANCE PURPOSES
+                //Console.WriteLine(stringAdds[i] + userString);
+            }
+
+
+
+
+
+
             Console.ReadLine();
 
             //END FIRST REQUIREMENT
@@ -67,7 +84,7 @@ namespace Exercise_6_Iterations
                 Console.WriteLine("\tThe infinite loop\n\tIt can ruin your program\n\tIt's an easy fix ");
                 Console.WriteLine("Press enter to continue. No really, press enter. That wan't part of the haiku . . . ");
                 Console.ReadLine();
-                ;
+
             }
 
             //END THIRD REQUIREMENT
@@ -145,13 +162,15 @@ namespace Exercise_6_Iterations
 
                     if (searchee == searchables[f])
                     {
-                        Console.WriteLine("You searched for " + searchables[f] + ". The index place of that item is " + f);
+                        Console.WriteLine("\nYou searched for " + searchables[f] + ". The index place of that item is " + f);
                         validator = true;
                         break;
                     }
-                    else if (searchee != "banana" && searchee != "apple" && searchee != "pear" && searchee != "grape" && searchee != "strawberry" && searchee != "orange" && searchee != "raspberry" && searchee != "mango" && searchee != "blackberry" && searchee != "blueberry")
+
+                    else if (!searchables.Contains(searchee))
+                    //else if (searchee != "banana" && searchee != "apple" && searchee != "pear" && searchee != "grape" && searchee != "strawberry" && searchee != "orange" && searchee != "raspberry" && searchee != "mango" && searchee != "blackberry" && searchee != "blueberry")
                     {
-                        Console.WriteLine("There was an error. Please only search from the given list and make sure it's spelled correctly. As punishment \npress enter");
+                        Console.WriteLine("\nThere was an error. Please only search from the given list and make sure it's spelled correctly. As punishment \npress enter");
                         Console.ReadLine();
                         break;
                     }
@@ -208,12 +227,16 @@ namespace Exercise_6_Iterations
                 Console.WriteLine("Please type in one of the options.");
                 string userVeg = Console.ReadLine();
 
-                if (userVeg != "carrot" && userVeg != "turnip" && userVeg != "pepper" && userVeg != "celery" && userVeg != "kale")
+
+                if (!veggies.Contains(userVeg))
+                // if (userVeg != "carrot" && userVeg != "turnip" && userVeg != "pepper" && userVeg != "celery" && userVeg != "kale")
                 {
                     Console.WriteLine("There was an error. Please only search from the given list and make sure it's spelled correctly. As punishment \npress enter");
                     Console.ReadLine();
                     //continue;
                 }
+
+
                 else
                 {
                     Console.WriteLine("You selected " + userVeg + ". The indices of that veggie are: ");
@@ -255,7 +278,7 @@ namespace Exercise_6_Iterations
 
             //END NINTH REQUIREMENT
 
-             //TENTH REQUIREMENT
+            //TENTH REQUIREMENT
 
             Console.WriteLine("Yet again this requirement has already been fulfilled. Kutos! PRESS ENTER.");
             Console.ReadLine();
@@ -280,7 +303,8 @@ namespace Exercise_6_Iterations
                 }
                 else
                 {
-                    Console.WriteLine("{0} has already been listed", starch);
+                    Console.WriteLine("{0} has already been listed",
+                        starch);
                 }
             }
 
