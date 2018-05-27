@@ -14,7 +14,7 @@ namespace Exercise_8_Classes_and_Objects
         {
             int result = adder + 5;
 
-            Console.WriteLine("\n" + adder + " + 5 is: " + result);
+            Console.WriteLine("\nYour number + 5 is: " + result);
             return result;
         }
 
@@ -22,7 +22,7 @@ namespace Exercise_8_Classes_and_Objects
         {
             int result = subber - 3;
 
-            Console.WriteLine("\n" + subber + " - 3 is: " + result);
+            Console.WriteLine("\nYour number - 3 is: " + result);
             return result;
         }
 
@@ -30,7 +30,7 @@ namespace Exercise_8_Classes_and_Objects
         {
             int result = multi * 6;
 
-            Console.WriteLine("\n" + multi + " * 6 is: " + result);
+            Console.WriteLine("\nYour number * 6 is: " + result);
             return result;
         }
 
