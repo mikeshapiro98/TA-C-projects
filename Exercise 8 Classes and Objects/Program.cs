@@ -36,12 +36,22 @@ namespace Exercise_8_Classes_and_Objects
                 else
                 {
                     int enteredNum = Convert.ToInt32(entered);
-                    packet.adding(enteredNum);
-                    packet.subtract(enteredNum);
-                    packet.multiply(enteredNum);
+
+                    //packet.adding(enteredNum);
+                    int write = packet.adding(enteredNum);
+                    Console.WriteLine("\n" + enteredNum + " + 5 is: " + write);
+
+                    //packet.subtract(enteredNum);
+                    int write2 = packet.subtract(enteredNum);
+                    Console.WriteLine("\n" + enteredNum + " - 3 is: " + write2);
+
+                    //packet.multiply(enteredNum);
+                    int write3 = packet.multiply(enteredNum);
+                    Console.WriteLine("\n" + enteredNum + " * 6 is: " + write3);
 
 
-                }
+
+                    }
 
                 }
                  catch (Exception /*stix*/)

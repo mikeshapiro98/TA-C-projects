@@ -12,7 +12,7 @@ namespace Exercise_9_methods_expansion
         public int original(int x)
         {
             int result = x + (15 - 3) * 2;
-            Console.WriteLine(x + "+ (15 - 3) * 2 is: " + result);
+            Console.WriteLine(x + " + (15 - 3) * 2 = " + result);
             return result;
         }
 
