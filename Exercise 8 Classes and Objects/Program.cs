@@ -47,7 +47,7 @@ namespace Exercise_8_Classes_and_Objects
                  catch (Exception /*stix*/)
                 {
 
-                    Console.WriteLine("\nERROR \nPlease enter only whole numbers");
+                    Console.WriteLine("\nERROR \nPlease enter only whole numbers or 'exit'");
                     //Console.WriteLine(stix.Message);
                     //Console.ReadLine();
                 }
