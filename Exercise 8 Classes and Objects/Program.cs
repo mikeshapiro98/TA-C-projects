@@ -12,35 +12,10 @@ namespace Exercise_8_Classes_and_Objects
         static void Main(string[] args)
         {
 
-            // int add(int adder)
-            //{
-            //    int result = adder + 5;
-
-            //    Console.WriteLine(result);
-            //    return result;
-            //}
-
-            //int subtract(int subber)
-            //{
-            //    int result = subber - 3;
-
-            //    Console.WriteLine(result);
-            //    return result;
-            //}
-
-            //int multiply(int multi)
-            //{
-            //    int result = multi * 6;
-
-            //    Console.WriteLine(result);
-            //    return result;
-            //}
-
-
-
+        
             packet packet = new packet();
             bool sleep = false;
-            Console.WriteLine("Hello! This porgram will ask you for an a whole number. It will then perform 3 methods on that number and return the number after the method has been perfomed. Press enter to start");
+            Console.WriteLine("Hello! This porgram will ask you for a whole number. It will then perform 3 mathmatical methods on that number \nand return the answers. Press enter to start");
             Console.ReadLine();
 
             while (sleep == false)
@@ -69,7 +44,7 @@ namespace Exercise_8_Classes_and_Objects
                 }
 
                 }
-                 catch (Exception stix)
+                 catch (Exception /*stix*/)
                 {
 
                     Console.WriteLine("\nERROR \nPlease enter only whole numbers");
