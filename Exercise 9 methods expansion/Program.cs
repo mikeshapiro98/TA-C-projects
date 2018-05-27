@@ -13,7 +13,7 @@ namespace Exercise_9_methods_expansion
 
             addomerators mathMachine = new addomerators();
 
-            Console.WriteLine("Enter a number bitch");
+            Console.WriteLine("Enter a number ");
             int userInt = Convert.ToInt32(Console.ReadLine());
 
             mathMachine.original(userInt);
