@@ -15,7 +15,7 @@ namespace Exercise_8_Classes_and_Objects
         
             packet packet = new packet();
             bool sleep = false;
-            Console.WriteLine("Hello! This porgram will ask you for a whole number. It will then perform 3 mathmatical methods on that number \nand return the answers. Press enter to start");
+            Console.WriteLine("Hello! This porgram will ask you for a whole number. It will then perform 3 mathmatical methods on that number \nand return the answers to each one. Press enter to start");
             Console.ReadLine();
 
             while (sleep == false)
