@@ -41,6 +41,7 @@ namespace Exercise_22_DateTime
 
             }
 
+            Console.WriteLine("Thank you for completing this program. Press enter to close the window.");
             Console.ReadLine();
 
         }
