@@ -67,6 +67,11 @@ namespace Exercise_23_Extras
 
     }
 }
+//1. Create a const variable
+
+//2. Create a variable using the keyword "var".
+
+//3. Chain two constructors together.
 
 
 
