@@ -1,0 +1,150 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@*Jumbotron*@
+<div class="jumbotron">
+    <h1 class="text-center">Uh-Oh! Insurance Company</h1>
+    <p class="lead text-center">Get a free quote today</p>
+</div>
+@*End Jumbotron*@
+
+<h1 class="text-center">Please fill out the following information to generate a quote</h1>
+<br />
+
+@*Begin form*@
+<form class="bg-primary">
+
+    @*Name*@
+    <div class="row">
+        <div class="col">
+            <h4 class="text-center">First Name</h4>
+            <input type="text" class="form-control d-block" placeholder="First name">
+
+        </div>
+        <br />
+        <div class="col">
+            <h4 class="text-center">Last Name</h4>
+            <input type="text" class="form-control" placeholder="Last name">
+        </div>
+        <br />
+
+        @*Email*@
+        <div class="col">
+            <h4 class="text-center">Email</h4>
+            <input type="email" class="form-control" placeholder="Email">
+        </div>
+        <br />
+
+        @*Birthday*@
+        <div class="col">
+            <h4 class="text-center">Birthday</h4>
+            <input type="date" class="form-control" placeholder="Birthday">
+        </div>
+        <br />
+
+        @*Vehicle Year*@
+        <div class="form-group">
+            <h4 class="text-center">Year of Vehicle</h4>
+            <select class="form-control">
+                <option>2000 or earlier</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option>2006</option>
+                <option>2007</option>
+                <option>2008</option>
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+            </select>
+        </div>
+        <br />
+
+        @*Car make/model*@
+        <div class="col">
+            <h4 class="text-center">Car Make</h4>
+            <input type="text" class="form-control" placeholder="Car Make">
+        </div>
+        <br />
+        <div class="col">
+            <h4 class="text-center">Car Model</h4>
+            <input type="text" class="form-control" placeholder="Car Model">
+        </div>
+        <br />
+
+        @*Speeding Tickets*@
+        <div class="col">
+            <h4 class="text-center">How many speeding tickets have you received?</h4>
+            <input type="number" class="form-control" placeholder="Tickets">
+        </div>
+        <br />
+
+        @*Full Coverage?*@
+        <h4 class="text-center">Would you like full coverage or just liability?</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="full" name="coverage" value="no" checked>
+            <label class="form-check-label" for="full">
+                Full Coverage
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input text-center" id="liability" type="radio" name="coverage" value="yes">
+            <label class="form-check-label" for="liability">
+                Liability Only
+            </label>
+        </div>
+
+
+        @*DUI*@
+        <h4 class="text-center">Have you ever had a DUI?</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="sober" name="DUI" value="no" checked>
+            <label class="form-check-label" for="sober">
+                No
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input text-center" id="drunk" type="radio" name="DUI" value="yes">
+            <label class="form-check-label" for="drunk">
+                Yes
+            </label>
+        </div>
+        <br />
+
+
+
+        <br />
+    </div>
+</form>
+@*End Form*@
+
+@******************************************************************Junk yard*******************************************************************************@
+
+
+@*<div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>*@
+
+
+@*<div class="jumbotron ">
+        <h1 class="text-center text-danger!important">Uh-Oh! Insurance Company</h1>
+        <p class="lead text-center">Get a free quote today</p>
+
+    </div>*@
