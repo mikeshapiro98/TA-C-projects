@@ -51,6 +51,8 @@ C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\rosl
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\roslyn\VBCSCompiler.exe
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\Antlr3.Runtime.dll
+C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\EntityFramework.dll
+C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\EntityFramework.SqlServer.dll
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -71,6 +73,8 @@ C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\Syst
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\System.Web.WebPages.dll
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\System.Web.WebPages.Razor.dll
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\WebGrease.dll
+C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\EntityFramework.xml
+C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\EntityFramework.SqlServer.xml
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\System.Web.Helpers.xml
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\System.Web.Mvc.xml
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\System.Web.Optimization.xml
@@ -86,12 +90,8 @@ C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\Micr
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\Microsoft.AI.Web.xml
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\obj\Debug\insurancePracticum.csprojAssemblyReference.cache
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\obj\Debug\insurancePracticum.csproj.CoreCompileInputs.cache
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\obj\Debug\insurancePracticum.csproj.CopyComplete
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\obj\Debug\insurancePracticum.dll
 C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\obj\Debug\insurancePracticum.pdb
-C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\EntityFramework.dll
-C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\EntityFramework.SqlServer.dll
-C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\EntityFramework.xml
-C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\bin\EntityFramework.SqlServer.xml
+C:\Users\micha\OneDrive\Desktop\C# github repository\insurancePracticum\obj\Debug\insurancePracticum.csprojAssemblyReference.cache

@@ -1,4 +1,6 @@
 ﻿@{
+    /**/
+
     ViewBag.Title = "Home Page";
 }
 
@@ -9,44 +11,52 @@
 </div>
 @*End Jumbotron*@
 
-<h1 class="text-center">Please fill out the following information to generate a quote</h1>
+<h2 class="text-center">Please fill out the following information to generate a quote</h2>
 <br />
+<div class="bg-primary rounded border border-danger  center-block">
 
-@*Begin form*@
-<form class="bg-primary">
+    @*Using Start*@
+    @using (Html.BeginForm("Customerinfo", "Home", FormMethod.Post))
+    {
 
-    @*Name*@
-    <div class="row">
-        <div class="col">
-            <h4 class="text-center">First Name</h4>
-            <input type="text" class="form-control d-block" placeholder="First name">
+        @*Begin form*@
+
+
+        @*Name*@
+      
+    <div class="row no-gutters">
+        <div class="col-lg-3 ">
+            <h4 class="text-center special-label-text">First Name</h4>
+            <input name="FirstName" type="text" class="form-control" placeholder="First name">
 
         </div>
         <br />
-        <div class="col">
-            <h4 class="text-center">Last Name</h4>
-            <input type="text" class="form-control" placeholder="Last name">
+        <div class="col-lg-3 align-items-center">
+            <h4 class="text-center special-label-text">Last Name</h4>
+            <input name="LastName" type="text" class="form-control" placeholder="Last name">
         </div>
-        <br />
+
 
         @*Email*@
-        <div class="col">
-            <h4 class="text-center">Email</h4>
-            <input type="email" class="form-control" placeholder="Email">
+        <div class="col-lg-3">
+            <h4 class="text-center special-label-text">Email</h4>
+            <input name="EmailAddress" type="email" class="form-control" placeholder="Email">
         </div>
         <br />
+
+
 
         @*Birthday*@
-        <div class="col">
-            <h4 class="text-center">Birthday</h4>
-            <input type="date" class="form-control" placeholder="Birthday">
+        <div class="col-lg-3">
+            <h4 class="text-center special-label-text">Birthday</h4>
+            <input name="DatoOfBirth" type="date" class="form-control" placeholder="Birthday">
         </div>
-        <br />
+
 
         @*Vehicle Year*@
-        <div class="form-group">
-            <h4 class="text-center">Year of Vehicle</h4>
-            <select class="form-control">
+        <div class="form-group col-lg-4">
+            <h4 class="text-center special-label-text">Year of Vehicle</h4>
+            <select name="CarYear" class="form-control">
                 <option>2000 or earlier</option>
                 <option>2001</option>
                 <option>2002</option>
@@ -71,62 +81,81 @@
         <br />
 
         @*Car make/model*@
-        <div class="col">
-            <h4 class="text-center">Car Make</h4>
-            <input type="text" class="form-control" placeholder="Car Make">
+        <div class="col-lg-4">
+            <h4 class="text-center special-label-text">Car Make</h4>
+            <input name="carMake" type="text" class="form-control" placeholder="Car Make">
         </div>
         <br />
-        <div class="col">
-            <h4 class="text-center">Car Model</h4>
-            <input type="text" class="form-control" placeholder="Car Model">
+        <div class="col-lg-4">
+            <h4 class="text-center special-label-text">Car Model</h4>
+            <input name="carModel" type="text" class="form-control" placeholder="Car Model">
         </div>
         <br />
-
-        @*Speeding Tickets*@
-        <div class="col">
-            <h4 class="text-center">How many speeding tickets have you received?</h4>
-            <input type="number" class="form-control" placeholder="Tickets">
-        </div>
-        <br />
-
-        @*Full Coverage?*@
-        <h4 class="text-center">Would you like full coverage or just liability?</h4>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" id="full" name="coverage" value="no" checked>
-            <label class="form-check-label" for="full">
-                Full Coverage
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input text-center" id="liability" type="radio" name="coverage" value="yes">
-            <label class="form-check-label" for="liability">
-                Liability Only
-            </label>
-        </div>
-
 
         @*DUI*@
-        <h4 class="text-center">Have you ever had a DUI?</h4>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" id="sober" name="DUI" value="no" checked>
-            <label class="form-check-label" for="sober">
-                No
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input text-center" id="drunk" type="radio" name="DUI" value="yes">
-            <label class="form-check-label" for="drunk">
-                Yes
-            </label>
+
+        <div class="special-div-center col-lg-6">
+            <h4 class="text-center special-label-text-form">Have you ever had a DUI?</h4>
+            <div class="form-check">
+                <input name="DUI" class="form-check-input" type="radio" id="sober" value="false" checked>
+                <label class="form-check-label" for="sober">
+                    No
+                </label>
+            </div>
+            <div class="form-check-next">
+                <input name="DUI" class="form-check-input" id="drunk" type="radio" value="true">
+                <label class="form-check-label" for="drunk">
+                    Yes
+                </label>
+            </div>
         </div>
         <br />
 
-
-
         <br />
+        @*Speeding Tickets*@
+        <div class="special-div-center col-lg-6">
+        
+           
+                <h4 class="text-center special-label-text-form-last">How many speeding tickets have you received?</h4>
+                <input name="SpeedingTickets" type="number" class="form-control" placeholder="Tickets">
+            
+            <br />
+        </div>
+
+        @*Full Coverage?*@
+        <div class="special-div-center col-lg-10 ">
+            <h4 class="text-center special-label-text-form-last">Would you like full coverage or liability?</h4>
+            <div class="form-check">
+                <input name="FullCoverage" class="form-check-input" type="radio" id="full" value="true" checked>
+                <label class="form-check-label" for="full">
+                    Full Coverage
+                </label>
+            </div>
+            <div class="form-check-next">
+                <input name="FullCoverage" class="form-check-input" id="liability" type="radio" value="false">
+                <label class="form-check-label" for="liability">
+                    Liability Only
+                </label>
+            </div>
+         </div>
+
+            @*Button*@
+
+
+            <button type="submit" class="btn btn-danger btn-lg btn-block center-block col-10">Submit</button>
+
+        </div>
+
+
+        @*End Form*@
+
+
+        }
+
+        @*Using end*@
+
     </div>
-</form>
-@*End Form*@
+
 
 @******************************************************************Junk yard*******************************************************************************@
 
