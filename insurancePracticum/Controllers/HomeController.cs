@@ -15,17 +15,17 @@ namespace insurancePracticum.Controllers
         }
 
         [HttpPost]
-        public ActionResult CustomerInfo(string firstName, string lastName, string emailAddress, DateTime dateOfBirth, int carYear, 
+        public ActionResult CustomerInfo(string firstName, string lastName, string emailAddress, DateTime dateOfBirth,int carYear, 
                                             string carMake, string carModel, bool dui, int speedingTicket, bool fullCoverage)
         {
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress) || string.IsNullOrEmpty(dateOfBirth.ToString()) ||
-                string.IsNullOrEmpty(carYear.ToString()) || string.IsNullOrEmpty(carMake) || string.IsNullOrEmpty(carModel) || string.IsNullOrEmpty(speedingTicket.ToString()))
-            {
-                return View("Error");
+            //if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress) || string.IsNullOrEmpty(dateOfBirth.ToString()) ||
+            //    string.IsNullOrEmpty(carYear.ToString()) || string.IsNullOrEmpty(carMake) || string.IsNullOrEmpty(carModel) || string.IsNullOrEmpty(speedingTicket.ToString()))
+            //{
+            //    return View("Error");
 
-            }
-            else
-            {
+            //}
+            //else
+            //{
                 using (var db = new InsuranceEntities())
                {
                     var customrInfo = new CustomerInfo();
@@ -45,7 +45,7 @@ namespace insurancePracticum.Controllers
                 
                 }
                 return View("Successful");
-            }
+            //}
 
         }
 
