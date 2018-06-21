@@ -15,7 +15,7 @@
 
     @*Using Start*@
 
-    @using (Html.BeginForm("CustomerInfo", "Home", FormMethod.Post))
+    @using (Html.BeginForm("CustomerInfo1", "Home", FormMethod.Post))
     {
 
         @*Begin form*@
@@ -48,7 +48,7 @@
             @*Birthday*@
             <div class="col-lg-3">
                 <h4 class="text-center special-label-text">Birthday</h4>
-                <input name="DatoOfBirth" type="date" class="form-control" placeholder="Birthday">
+                <input name="dateOfBirth" type="date" class="form-control" placeholder="Birthday">
             </div>
 
 
@@ -116,7 +116,7 @@
 
 
                 <h4 class="text-center special-label-text-form-last ">How many speeding tickets have you received?</h4>
-                <input name="SpeedingTickets" type="number" class="form-control" placeholder="Tickets">
+                <input name="SpeedingTicket" type="number" class="form-control" placeholder="Tickets">
 
                 <br />
             </div>

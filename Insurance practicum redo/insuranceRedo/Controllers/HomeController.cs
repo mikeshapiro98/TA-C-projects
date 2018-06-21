@@ -36,8 +36,8 @@ namespace insuranceRedo.Controllers
 
 
         [HttpPost]
-        public ActionResult CustomerInfo(string firstName, string lastName, string emailAddress, DateTime dateOfBirth, int carYear,
-                                            string carMake, string carModel, bool dui, int speedingTicket, bool fullCoverage)
+        public ActionResult CustomerInfo(string firstName, string lastName, string emailAddress, string dateOfBirth, int carYear,
+                                            string carMake, string carModel, bool dui, string speedingTicket, bool fullCoverage)
         {
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress) || string.IsNullOrEmpty(dateOfBirth.ToString()) ||
                 string.IsNullOrEmpty(carYear.ToString()) || string.IsNullOrEmpty(carMake) || string.IsNullOrEmpty(carModel) || string.IsNullOrEmpty(speedingTicket.ToString()))
@@ -49,16 +49,16 @@ namespace insuranceRedo.Controllers
             {
                 using (InsuranceEntities db = new InsuranceEntities())
                 {
-                    CustomerInfo customrInfo = new CustomerInfo();
+                    var customrInfo = new CustomerInfo();
                     customrInfo.FirstName = firstName;
                     customrInfo.LastName = lastName;
                     customrInfo.EmailAddress = emailAddress;
-                    customrInfo.DateOfBirth =   dateOfBirth;
+                    customrInfo.DateOfBirth = DateTime.Parse(dateOfBirth);
                     customrInfo.CarYear = carYear;
                     customrInfo.CarMake = carMake;
                     customrInfo.CarModel = carModel;
                     customrInfo.DUI = dui;
-                    customrInfo.SpeedingTickets = speedingTicket;
+                    customrInfo.SpeedingTickets = Convert.ToInt32(speedingTicket);
                     customrInfo.FullCoverage = fullCoverage;
 
                     db.CustomerInfoes.Add(customrInfo);
