@@ -15,9 +15,17 @@ namespace insuranceRedo3.Controllers
             return View();
         }
 
-    
-        
-            //CUSTOMER INTAKE TO DB
+        public ActionResult TestVm()
+        {
+            return View();
+        }
+
+
+      
+
+        private insuranceUhohEntities db = new insuranceUhohEntities();
+
+        //CUSTOMER INTAKE TO DB
         [HttpPost]
         public ActionResult CustomerTable(string firstName, string lastName, string emailAddress, string dateOfBirth, int carYear,
                                            string carMake, string carModel, bool dui, string speedingTicket, bool fullCoverage)
@@ -113,29 +121,48 @@ namespace insuranceRedo3.Controllers
                     db.CustomerTables.Add(customerTable);
                     db.SaveChanges();
 
-                    //int userId = customerTable.Id;
-                    
-             
+                    int userId = customerTable.Id;
+
+                    //   return View(Quoter(userId));
+
+                    return RedirectToAction("Quote", customerTable.Id);
                 }
-                return View("Quote");
+                
             }
         }
 
 
-        //public ActionResult Quote()
+        //public ActionResult Quoter(int Id)
         //{
-        //   return View();
+        //    if (Id == null)
+        //    {
+        //        return View("~/Views/Shared/Error.cshtml");
+        //    }
+        //    CustomerTable customer = db.CustomerTables.Find(Id);
+        //    if (customer == null)
+        //    {
+        //        return View("~/Views/Shared/Error.cshtml");
+        //    }
+        //    return View(customer);
         //}
 
 
-        private insuranceUhohEntities db = new insuranceUhohEntities();
-        public ActionResult Quote(int? id)
+        public ActionResult Quote(int, Id)
         {
-            
-            CustomerTable customer = db.CustomerTables.Find(id);
-           
-            return View(customer);
+            quoteVm returner = new quoteVm();
+            returner.Id = Id; 
+            return View();
         }
+
+
+
+        //public ActionResult Quote(int? id)
+        //{
+
+        //    CustomerTable customer = db.CustomerTables.Find(id);
+
+        //    return View(customer);
+        //}
 
 
         //[HttpPost]
