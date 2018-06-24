@@ -122,7 +122,7 @@ namespace CarInsurance.Controllers
 
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("DetailsVm", new { Id = insuree.Id });
 
             }
                 
@@ -130,6 +130,7 @@ namespace CarInsurance.Controllers
 
             //return View(insuree);
         }
+
 
         // GET: Insuree/Edit/5
         public ActionResult Edit(int? id)
@@ -145,6 +146,22 @@ namespace CarInsurance.Controllers
             }
             return View(insuree);
         }
+
+        public ActionResult DetailVm(int? id)
+        {
+            //if (id == null)
+            //{
+            //    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            //}
+            Insuree insuree = db.Insurees.Find(id);
+            //if (insuree == null)
+            //{
+            //    return HttpNotFound();
+            //}
+            return View(insuree);
+        }
+
+
 
         // POST: Insuree/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 

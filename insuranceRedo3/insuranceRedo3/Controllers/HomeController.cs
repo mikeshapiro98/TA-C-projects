@@ -21,7 +21,7 @@ namespace insuranceRedo3.Controllers
         }
 
 
-      
+
 
         private insuranceUhohEntities db = new insuranceUhohEntities();
 
@@ -43,7 +43,7 @@ namespace insuranceRedo3.Controllers
                 using (insuranceUhohEntities db = new insuranceUhohEntities())
                 {
                     var customerTable = new CustomerTable();
-                    
+
                     customerTable.FirstName = firstName;
                     customerTable.LastName = lastName;
                     customerTable.EmailAddress = emailAddress;
@@ -56,7 +56,7 @@ namespace insuranceRedo3.Controllers
                     customerTable.DUI = dui;
                     customerTable.SpeedingTickets = Convert.ToInt32(speedingTicket);
                     customerTable.FullCoverage = fullCoverage;
-                  
+
 
                     //LOGIC OPPERATIONS
                     DateTime grab = DateTime.Parse(dateOfBirth);
@@ -67,27 +67,27 @@ namespace insuranceRedo3.Controllers
                     quote = 50.00;
 
                     //AGE CHECK
-                    if(age < 18)
+                    if (age < 18)
                     {
                         quote = quote + 100.00;
                     }
-                    else if(age < 25 || age > 100)
+                    else if (age < 25 || age > 100)
                     {
                         quote = quote + 25.00;
                     }
 
 
                     //CAR YEAR CHECK
-                    if(carYear == 1999 || carYear > 2015)
+                    if (carYear == 1999 || carYear > 2015)
                     {
                         quote = quote + 25.00;
                     }
-                  
+
                     //PORCHE CHECK 
-                    if(carMake == "porche")
+                    if (carMake == "porche")
                     {
                         quote = quote + 25.00;
-                        if(carModel == "911 carrera")
+                        if (carModel == "911 carrera")
                         {
                             quote = quote + 25.00;
                         }
@@ -99,9 +99,9 @@ namespace insuranceRedo3.Controllers
                     {
                         return View("~/Views/Shared/Error.cshtml");
                     }
-                    for(int i = 0; i < ticketCount; i++ )
+                    for (int i = 0; i < ticketCount; i++)
                     {
-                        quote = quote + 10.00; 
+                        quote = quote + 10.00;
                     }
 
                     //DUI CHECK
@@ -111,12 +111,12 @@ namespace insuranceRedo3.Controllers
                     }
 
                     //FULL COVERAGE CHECK 
-                    if(fullCoverage == true)
+                    if (fullCoverage == true)
                     {
                         quote = quote + (quote * .50);
                     }
 
-                    customerTable.Quote = quote; 
+                    customerTable.Quote = quote;
 
                     db.CustomerTables.Add(customerTable);
                     db.SaveChanges();
@@ -125,9 +125,10 @@ namespace insuranceRedo3.Controllers
 
                     //   return View(Quoter(userId));
 
-                    return RedirectToAction("Quote", customerTable.Id);
+
+
+                    return RedirectToAction("Quote", new { Id = userId });
                 }
-                
             }
         }
 
@@ -147,13 +148,22 @@ namespace insuranceRedo3.Controllers
         //}
 
 
-        public ActionResult Quote(int, Id)
-        {
-            quoteVm returner = new quoteVm();
-            returner.Id = Id; 
-            return View();
-        }
 
+       
+        public ActionResult Quote(int? Id)
+        {
+            using (insuranceUhohEntities db = new insuranceUhohEntities())
+            {
+                var returner = new quoteVm();
+                returner.Id = returner.Id;
+                returner.FirstName = returner.FirstName;
+                returner.LastName = returner.LastName;
+                returner.Quote = returner.Quote;
+                return View(returner);
+            }
+                
+        
+        }
 
 
         //public ActionResult Quote(int? id)

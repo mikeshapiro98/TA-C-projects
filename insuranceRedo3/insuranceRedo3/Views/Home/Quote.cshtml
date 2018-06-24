@@ -4,7 +4,7 @@
 }
 
 @using insuranceRedo3.ViewModels
-@model List<quoteVm>
+@model quoteVm
 
 <div class="row no-gutters m-3">
 
@@ -16,6 +16,10 @@
         <div class="card-body">
             <div class="col-10 m-2">
                     <h2>Quote</h2>
+                @Model.FirstName
+                @Model.LastName
+                @Model.Quote
+
                 </div>
             </div>
            

@@ -4956,11 +4956,11 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    /*color: inherit;*/
+    background-color: #337ab7;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -6754,4 +6754,11 @@ button.close {
     display: none !important;
   }
 }
+
+
+#b-override-1{
+    border:1px outset grey; 
+    padding:5%;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
