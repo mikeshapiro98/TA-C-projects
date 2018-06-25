@@ -4,12 +4,12 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2 class="text-danger text-center">Your information and quote</h2>
 
 <div>
-    <h4>Insuree</h4>
+    <h4 class="text-danger text-center">Customer Quote</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal bg-primary b-override-2">
         <dt>
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
@@ -90,17 +90,23 @@
             @Html.DisplayFor(model => model.CoverageType)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Quote)
-        </dt>
 
-        <dd>
+
+        <dd class="b-override-3">
+            @Html.DisplayNameFor(model => model.Quote)
             @Html.DisplayFor(model => model.Quote)
         </dd>
+        <a href="~/Home">
+            <button  class="btn-danger">
+                Back to home page
+            </button>
+        </a>
+      
+           </dl>
 
-    </dl>
-</div>
+       
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Admin View", "Index")
 </p>

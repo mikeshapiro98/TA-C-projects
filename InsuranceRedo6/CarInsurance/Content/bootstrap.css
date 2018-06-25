@@ -6756,9 +6756,24 @@ button.close {
 }
 
 
-#b-override-1{
-    border:1px outset grey; 
-    padding:5%;
+.b-override-1 {
+    border: 2px groove #843534;
+    padding: 5%;
 }
+
+
+.b-override-2 {
+    
+    padding: 3%;
+}
+
+.b-override-3 {
+    font-size: 3em;
+    text-decoration: underline solid #d9f4f7;
+    color: #d9f4f7;
+    padding-left: 30%;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
 
 /*# sourceMappingURL=bootstrap.css.map */

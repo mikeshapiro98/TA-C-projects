@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CarInsurance.Models;
+using CarInsurance.ViewModels;
 
 namespace CarInsurance.Controllers
 {
@@ -117,12 +118,12 @@ namespace CarInsurance.Controllers
 
                 //insuree.Quote = quote;
 
-                //int userId = customerTable.Id;
-
-
+                int userId = insuree.Id;
+              
+               
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
-                return RedirectToAction("DetailsVm", new { Id = insuree.Id });
+                return RedirectToAction("Details",  new { id = insuree.Id});
 
             }
                 
@@ -147,19 +148,19 @@ namespace CarInsurance.Controllers
             return View(insuree);
         }
 
-        public ActionResult DetailVm(int? id)
+        public ActionResult DetailsVm(int id)
         {
-            //if (id == null)
-            //{
-            //    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            //}
-            Insuree insuree = db.Insurees.Find(id);
+           
+
+            DetailsVm spitBack = db.DetailsVms.Find(id);
+            
             //if (insuree == null)
             //{
             //    return HttpNotFound();
             //}
-            return View(insuree);
+            return View(spitBack);
         }
+
 
 
 
