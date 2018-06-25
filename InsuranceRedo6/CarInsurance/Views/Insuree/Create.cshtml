@@ -9,19 +9,18 @@
 {
     @Html.AntiForgeryToken()
     
-<div class="form-horizontal bg-primary " style="padding: 4% 20% 4% 20%; border:none;">
+<div class="form-horizontal bg-primary ">
 
-    <h2 class="text-center">Please fill out the following information to get your quote.</h2>
+    <h1 class="text-center b-override-6">Please fill out the following information to get your quote.</h1>
 
 
     <br />
     <br />
-    <br />
-    <br />
+  
     @*<h4>Insuree</h4>*@
     @*<hr />*@
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    <div class="form-group ">
+    <div class="form-group  b-override-4">
         @*@Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })*@
         <h4>First Name </h4>
         <div class="col-md-10">
@@ -30,7 +29,7 @@
         </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group b-override-4">
         @*@Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })*@
         <h4>Last Name </h4>
         <div class="col-md-10">
@@ -39,7 +38,7 @@
         </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group b-override-4">
         @*@Html.LabelFor(model => model.EmailAddress, htmlAttributes: new { @class = "control-label col-md-2" })*@
         <h4>Email Address </h4>
         <div class="col-md-10">
@@ -48,7 +47,7 @@
         </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group b-override-4">
         @*@Html.LabelFor(model => model.DateOfBirth, htmlAttributes: new { @class = "control-label col-md-2" })*@
         <h4>Date Of Birth </h4>
         <div class="col-md-10">
@@ -57,7 +56,7 @@
         </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group b-override-4">
         @*@Html.LabelFor(model => model.CarYear, htmlAttributes: new { @class = "control-label col-md-2" })*@
         <h4>Year Of Vehicle</h4>
         <div class="col-md-10">
@@ -66,7 +65,7 @@
         </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group b-override-4">
         @*@Html.LabelFor(model => model.CarMake, htmlAttributes: new { @class = "control-label col-md-2" })*@
         <h4>Make of Vehicle</h4>
         <div class="col-md-10">
@@ -75,7 +74,7 @@
         </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group b-override-4">
         @*@Html.LabelFor(model => model.CarModel, htmlAttributes: new { @class = "control-label col-md-2" })*@
         <h4>Model of Vehicle</h4>
         <div class="col-md-10">
@@ -84,7 +83,7 @@
         </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group b-override-4">
         @*@Html.LabelFor(model => model.DUI, htmlAttributes: new { @class = "control-label col-md-2" })*@
         <h4 class="">Have you ever had a DUI before?</h4>
         <div class="col-md-10">
@@ -100,7 +99,7 @@
         </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group b-override-4">
         @*@Html.LabelFor(model => model.SpeedingTickets, htmlAttributes: new { @class = "control-label col-md-2" })*@
         <h4>How many speeding tickets have you recieved?</h4>
         <div class="col-md-10">
@@ -109,7 +108,7 @@
         </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group b-override-4">
         @*@Html.LabelFor(model => model.CoverageType, htmlAttributes: new { @class = "control-label col-md-2" })*@
         <h4>Would you like full coverage or liability only?</h4>
         <div class="col-md-10">
@@ -123,7 +122,7 @@
         </div>
     </div>
 
-    <div class="hidden form-group">
+    <div class="hidden form-group b-override-4">
         @Html.LabelFor(model => model.Quote, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.EditorFor(model => model.Quote, new { htmlAttributes = new { @class = "form-control" } })
@@ -131,17 +130,19 @@
         </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group b-override-5">
         <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Get my quote" class="btn btn-danger" />
+            <input type="submit" value="Get my quote" class="btn btn-danger btn-lg btn-block" />
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        
     </div>
 </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

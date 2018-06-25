@@ -27,6 +27,8 @@ namespace CarInsurance.Models
     
         public virtual DbSet<Insuree> Insurees { get; set; }
 
-        public System.Data.Entity.DbSet<CarInsurance.ViewModels.DetailsVm> DetailsVms { get; set; }
+        public System.Data.Entity.DbSet<CarInsurance.ViewModels.adminVm> adminVms { get; set; }
+
+        //public System.Data.Entity.DbSet<CarInsurance.ViewModels.DetailsVm> DetailsVms { get; set; }
     }
 }

@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using CarInsurance.Models;
 using CarInsurance.ViewModels;
 
+
 namespace CarInsurance.Controllers
 {
     public class InsureeController : Controller
@@ -19,7 +20,30 @@ namespace CarInsurance.Controllers
         public ActionResult Index()
         {
             return View(db.Insurees.ToList());
+         }
+
+        public ActionResult adminVm()
+        {
+            using (db)
+            {
+                var persons = db.Insurees.ToList();
+                var adminVms = new List<adminVm>();
+                foreach (var adminVm in persons)
+                {
+                    var av = new adminVm();
+                    av.Id = adminVm.Id;
+                    av.FirstName = adminVm.FirstName;
+                    av.LastName = adminVm.LastName;
+                    av.EmailAddress = adminVm.EmailAddress;
+                    av.Quote = adminVm.Quote;
+                    adminVms.Add(av);
+
+                }
+                return View(adminVms);
+
+            }
         }
+
 
         // GET: Insuree/Details/5
         public ActionResult Details(int? id)
@@ -62,8 +86,7 @@ namespace CarInsurance.Controllers
                 //DateTime grab = DateTime.Parse(insuree.DateOfBirth);
                 //int year = grab.Year;
                 int age = DateTime.Now.Year - insuree.DateOfBirth.Year;
-
-
+                
                 insuree.Quote = 50.00m;
 
                 //AGE CHECK
@@ -73,7 +96,7 @@ namespace CarInsurance.Controllers
                 }
                 else if (age < 25 || age > 100)
                 {
-                    insuree.Quote = insuree.Quote + 25.00m;
+                    insuree.Quote = insuree.Quote  +25.00m;
                 }
 
 
@@ -118,7 +141,6 @@ namespace CarInsurance.Controllers
 
                 //insuree.Quote = quote;
 
-                int userId = insuree.Id;
               
                
                 db.Insurees.Add(insuree);
@@ -148,23 +170,8 @@ namespace CarInsurance.Controllers
             return View(insuree);
         }
 
-        public ActionResult DetailsVm(int id)
-        {
-           
 
-            DetailsVm spitBack = db.DetailsVms.Find(id);
-            
-            //if (insuree == null)
-            //{
-            //    return HttpNotFound();
-            //}
-            return View(spitBack);
-        }
-
-
-
-
-        // POST: Insuree/Edit/5
+         // POST: Insuree/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -216,3 +223,54 @@ namespace CarInsurance.Controllers
         }
     }
 }
+
+
+//***********************************************************************JUNK YARD***************************************************************************************************//
+
+
+
+//using (db)
+//{
+//    //var signups = db.SignUps.Where(x => x.Removed == null).ToList(); //Right now we're just pulling all sign ups, but we want to be more specific. there are 2 ways to do this.
+//    //1. is to use "link" (a fast way of sorting lists.) the way above is an example. You don't need SQL to do SQL like things. (Lamda expression)
+//    //2. is to query (LINQ/SQL). The below is an example
+//    var insuree = db.Insurees.ToList();
+//    var detailsVms = new List<DetailsVm>();
+//    foreach (var person in detailsVms)
+//    {
+//        var detailsVm = new DetailsVm();
+//        detailsVm.ID = person.ID;
+//        detailsVm.FName = person.FName;
+//        detailsVm.LName = person.LName;
+//        detailsVm.EAddress = person.EAddress;
+//        detailsVm.quote = person.quote;
+//        detailsVms.Add(person);
+
+//    }
+//    return View(detailsVms);
+
+//}
+
+
+
+//public ActionResult DetailsVm(int id)
+//{
+
+
+//    DetailsVm spitBack = db.DetailsVms.Find(id);
+
+//    //if (insuree == null)
+//    //{
+//    //    return HttpNotFound();
+//    //}
+//    return View(spitBack);
+//}
+
+
+
+
+//decimal plusTwentyfive(decimal quote)
+//{
+//    quote = quote + 25.00m;
+//    return (quote);
+//}

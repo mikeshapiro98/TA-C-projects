@@ -3972,9 +3972,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-left: -1px;
 }
 .nav {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .nav > li {
   position: relative;
@@ -4277,6 +4278,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4589,28 +4591,28 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+    background-color: #bc4f4f;
+    border-color: #080808;
 }
-.navbar-inverse .navbar-brand {
-  color: #9d9d9d;
-}
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-brand:focus {
-  color: #fff;
-  background-color: transparent;
-}
+    .navbar-inverse .navbar-brand {
+        color: #eee;
+    }
+        .navbar-inverse .navbar-brand:hover,
+        .navbar-inverse .navbar-brand:focus {
+            color: #b2f2ff;
+            background-color: transparent;
+        }
 .navbar-inverse .navbar-text {
   color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #9d9d9d;
+  color: #eee;
 }
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
-  color: #fff;
-  background-color: transparent;
-}
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus {
+        color: #b2f2ff;
+        background-color: transparent;
+    }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -6773,6 +6775,22 @@ button.close {
     color: #d9f4f7;
     padding-left: 30%;
     font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.b-override-4 {
+    padding: 1% 0 1% 38%;
+    border: none;
+    text-align: justify;
+
+    
+}
+
+.b-override-5 {
+    padding: 1% 0 1% 25%;
+   
+}
+.b-override-6 {
+    padding: 7% 0 0 0%;
 }
 
 
