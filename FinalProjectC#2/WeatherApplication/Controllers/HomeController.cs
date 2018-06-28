@@ -14,6 +14,12 @@ namespace WeatherApplication.Controllers
             return View();
         }
 
+        public ActionResult NameGame()
+        {
+            return View();
+        }
+
+
         public ActionResult WeatherOrNot()
         {
             return View();
