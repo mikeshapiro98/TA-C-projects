@@ -1,0 +1,26 @@
+﻿<!-- ko with: home -->
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+
+<form data-bind="submit : function() {executeOnServer(viewModel, &#39;/SimpleList/AddItem&#39;);}" id="myform">
+    <span>New item:</span>
+    <input data-bind="value : ItemToAdd,valueUpdate : &#39;afterkeydown&#39;" name="ItemToAdd" type="text" />  <button type="submit" data-bind="enable : (ItemToAdd().length > 0)">Add</button>
+    <p>Your items:</p>
+    <select data-bind="options : Items" multiple="multiple" size="7" width="50"></select>
+</form>
+<script type="text/javascript">
+    $('#myform').ajaxForm();
+</script>
+
+<script type="text/javascript">
+    var viewModelJs = { "ItemToAdd": "", "Items": ["Alpha", "Beta", "Gamma"] };
+    var viewModel = ko.mapping.fromJS(viewModelJs);
+    ko.applyBindings(viewModel);
+</script>
+
+
+<!-- /ko -->
