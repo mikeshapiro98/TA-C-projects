@@ -16,8 +16,7 @@ namespace Exercise_9_methods_expansion
 
             //INRO
             Console.WriteLine("Welcome! In this program we will be using methods to do math equations. Press enter to start.");
-       
-            TEST BREAKER
+
             //END INTRO
 
             bool sleep = false;
