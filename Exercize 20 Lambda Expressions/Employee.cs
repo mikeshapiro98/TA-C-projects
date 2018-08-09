@@ -13,16 +13,10 @@ namespace Exercize_20_Lambda_Expressions
         public string LastName { get; set; }
         public int callerID { get; set; }
 
-
-
-
         public void SayName()
         {
             Console.WriteLine("Name: " + FirstName + " " + LastName + " " + callerID);
 
         }
-
-
-
     }
 }

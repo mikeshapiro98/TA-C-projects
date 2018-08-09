@@ -29,8 +29,6 @@ namespace Exercise_22_DateTime
                 
                 if (res)
                 {
-
-                    
                     Console.WriteLine("In " + num1 +" hours it will be " + DateTime.Now.AddHours(num1));
                     failure = false;
                 }
