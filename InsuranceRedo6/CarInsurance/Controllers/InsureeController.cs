@@ -153,8 +153,6 @@ namespace CarInsurance.Controllers
 
             //return View(insuree);
         }
-
-
         // GET: Insuree/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -169,8 +167,6 @@ namespace CarInsurance.Controllers
             }
             return View(insuree);
         }
-
-
          // POST: Insuree/Edit/5j
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
