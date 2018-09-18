@@ -41,8 +41,6 @@ namespace Exercise_23_Extras
                new Superhero ( ),
                new Superhero ( "Wonder Woman", "Washington D.C.", "Superhuman Strength & Lasso Skills")
             };
-
-
             foreach (Superhero hero in heroes)
             {
                 Console.WriteLine("\nName: " + hero.name + " \nCity of Jurisdiction: " + hero.city + " \nSuperpower: " + hero.superpower);
@@ -57,10 +55,6 @@ namespace Exercise_23_Extras
             Console.WriteLine("Hope you had fun. Goodbye for now!");
             Console.ReadLine();
             //END CONCLUSION
-
-
-
-
 
         }
 
