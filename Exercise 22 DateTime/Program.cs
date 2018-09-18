@@ -10,7 +10,6 @@ namespace Exercise_22_DateTime
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Welcome back to another exciting program! In this one we will be experimenting with date and time. \nPress enter to get started.");
             Console.ReadLine();
             Console.WriteLine("\nCurrently the date & time is "+ DateTime.Now +". You're alive to see it. Congratulations! Press enter.");
