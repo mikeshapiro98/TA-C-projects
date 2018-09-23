@@ -68,7 +68,7 @@ namespace Exercize_20_Lambda_Expressions
             {
                 if (freshMeat.FirstName == "Joe")
                 {
-                    joesList.Add(freshMeat);
+                    joesList.Add(freshMeat);a
                 }
 
             }
