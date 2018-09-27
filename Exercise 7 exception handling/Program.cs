@@ -39,10 +39,6 @@ namespace Exercise_7_exception_handling
             Console.ReadLine();
 
             //END INTRODUCTION
-
-
-
-
             List<int> dividableList = new List<int>() { 10, 15, 17, 34, 88, 234, 223434 };
             bool sleep = true;
 
@@ -56,21 +52,13 @@ namespace Exercise_7_exception_handling
                 try
                 {
                     int usersNum = Convert.ToInt32(Console.ReadLine());
-
-
-
                     if (usersNum != 0)
                     {
                         Console.WriteLine("You selected " + usersNum + ". The list numbers divided by " + usersNum + " are:");
-                    }
-
-                    
-                    
+                    }                   
                     for (int i = 0; i < dividableList.Count; i++)
                     {
                         
-                       
-                            
                             int divided = dividableList[i] / usersNum;
                             Console.WriteLine(divided);
                             sleep = false;
