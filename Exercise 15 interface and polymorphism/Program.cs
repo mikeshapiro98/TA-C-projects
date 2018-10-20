@@ -16,7 +16,7 @@ namespace Exercise_15_interface_and_polymorphism
             employee.LastName = "Shapiro";
 
             employee.SayName();
-            quittable.Quit();
+            quittable.Quit(); 
             Console.ReadLine();
         }
     }
