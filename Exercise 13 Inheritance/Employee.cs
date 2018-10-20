@@ -8,10 +8,7 @@ namespace Exercise_13_Inheritance
 {
     public class Employee : Person
     {
-
         public int callerID { get; set; }
-
-
     }
 }
 //1. Create a class called Person and give it two properties, each of data type string. One called FirstName, the other LastName.

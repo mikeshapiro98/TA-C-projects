@@ -10,15 +10,13 @@ namespace Exercise_13_Inheritance
     {
         static void Main(string[] args)
         {
-
             Employee employee = new Employee();
             employee.FirstName =  "Sample" ;
             employee.LastName = "Student" ;
-           // employee.callerID = 
-
+            employee.callerID = 2;
             employee.SayName();
+            Console.WriteLine(employee.callerID);
             Console.ReadLine();
-
         }
     }
 }

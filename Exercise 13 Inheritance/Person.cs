@@ -10,16 +10,10 @@ namespace Exercise_13_Inheritance
     {
         public string FirstName { get; set; }  
         public string LastName { get; set; }
-
         public void SayName()
         {
-            Console.WriteLine("Name: " + FirstName + " " + LastName);
-            
+            Console.WriteLine("Name: " + FirstName + " " + LastName);            
         }
-
-
-
-
     }
 }
 //1. Create a class called Person and give it two properties, each of data type string. One called FirstName, the other LastName.
