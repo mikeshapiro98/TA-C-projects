@@ -10,8 +10,6 @@ namespace exercise_10_optional_perameters
     {
         static void Main(string[] args)
         {
-
-
             opOriginals mathMachine = new opOriginals(); //INSTANTIATING CLASS
 
             //INTRO
@@ -34,10 +32,6 @@ namespace exercise_10_optional_perameters
                     Console.WriteLine("\nNow select a second number to add to the equation OR press enter to use the default number. This one is optional.");
                     string intakeValve2 = Console.ReadLine();
                     int tester;
-
-               
-
-
 
                     if (int.TryParse(intakeValve2, out tester))
                     {
