@@ -78,7 +78,7 @@ namespace Exercise_4_string_fucntions
             Console.WriteLine("Now an example of a stringbuilder will be presented as a paragraph that is written and added sentance by sentance");
             System.Threading.Thread.Sleep(2000);
             Console.WriteLine(" ");
-            
+
             //Stringbuilder instantiation
             StringBuilder ex = new StringBuilder();
             ex.Append("\t This paragraph is exemplifying the use of a stingbuilder in C#. ");
