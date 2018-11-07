@@ -11,6 +11,7 @@ namespace Exercise_15_interface_and_polymorphism
 
         void Quit();
 
+
     }
 }
 //1. Create an interface called IQuittable and have it define a void method called Quit().

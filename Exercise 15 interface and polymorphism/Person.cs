@@ -13,10 +13,7 @@ namespace Exercise_15_interface_and_polymorphism
 
         public virtual void SayName()
         {
-
             Console.WriteLine("Name: " + FirstName + " " + LastName);
-
-
         }
 
 
