@@ -13,10 +13,8 @@ namespace Casino
        public List<Card> Cards { get; set; }
 
         public Deck() //THIS IS A CONSTRUCTOR
-        {
-           
+        {         
             Cards = new List<Card>();
-
             for (int i = 0 ; i < 13 ; i++)
             {
                 for (int j = 0; j < 4; j++) 
@@ -27,11 +25,7 @@ namespace Casino
                     Cards.Add(card);
 
                 }
-
-
-            }
-
-          
+            }          
         }
 
         public /*static*/ /*Deck*/void Shuffle(/*Deck deck,*/ /*out int timesShuffled,*/ int times = 1)
