@@ -33,9 +33,6 @@ namespace Exercise_23_Extras
             name = Name;
             city = City;
             superpower = Superpower;
-
-            
-
         }
 
      
