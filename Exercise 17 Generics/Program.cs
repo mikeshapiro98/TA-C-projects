@@ -35,15 +35,10 @@ namespace Exercise_17_Generics
             employeeInt.things.Add(3);
             employeeInt.things.Add(2);
             employeeInt.things.Add(1);
-
             employeeString.SayName();
             employeeString.copy();
             employeeInt.SayName();
             employeeInt.copy();
-
-
-
-
             Console.ReadLine();
         }
     }
