@@ -8,12 +8,10 @@ namespace Exercise_17_Generics
 {
     class Employee<T>
     {
-
         public string FirstName { get; set; }
         public string LastName { get; set; }
         //public int callerID { get; set; }
         public List<T> things { get; set; }
-
         public void SayName()
         {
             Console.WriteLine("\nName: " + FirstName + " " + LastName /*+ " " + callerID*/);
@@ -26,7 +24,6 @@ namespace Exercise_17_Generics
             Console.WriteLine(things[i]);
 
         }
-
     }
 
 }

@@ -10,9 +10,6 @@ namespace Exercise_17_Generics
     {
         static void Main(string[] args)
         {
-
-            
-
             Employee<string> employeeString = new Employee<string>();
             employeeString.FirstName = "String";
             employeeString.LastName = "Generics";
@@ -24,8 +21,6 @@ namespace Exercise_17_Generics
             employeeString.things.Add("a");
             employeeString.things.Add("string");
             employeeString.things.Add("list");
-
-
             Employee<int> employeeInt = new Employee<int>();
             employeeInt.FirstName = "Int";
             employeeInt.LastName = "Generics";
