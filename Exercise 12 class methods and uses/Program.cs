@@ -141,14 +141,10 @@ namespace Exercise_12_class_methods_and_uses
 
 
             }
-
-
             //CONCLUSION
             Console.WriteLine("\nHope you had fun! See you next time. Press enter to close the window");
             Console.ReadLine();
-
             //END CONCLUSION
-
         }
     }
 }

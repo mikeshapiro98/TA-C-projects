@@ -22,10 +22,6 @@ namespace Exercise_12_class_methods_and_uses
             num = result;
             
         }
-
-      
-
-
     }
 }
 
