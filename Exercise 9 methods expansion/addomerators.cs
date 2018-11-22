@@ -8,15 +8,12 @@ namespace Exercise_9_methods_expansion
 {
     class addomerators
     {
-
         public int original(int x)
         {
             int result = x + (15 - 3) * 2;
            
             return result;
         }
-
-
         public int original(decimal xm)
         {
             decimal result = xm + 31.4m - 2.38m;
@@ -24,19 +21,13 @@ namespace Exercise_9_methods_expansion
             int resultInt = Decimal.ToInt32(result);
             return resultInt;
         }
-
         public int original(string xs /*out int conversion*/)
-        {
-            
+        {            
             //conversion = 0;
             int bringIt = Convert.ToInt32(xs);
             int result = bringIt - 15 + 45 * (18 / 3);
             return result;
-
         }
-
-
-
     }
 }
 

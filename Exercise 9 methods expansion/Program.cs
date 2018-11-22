@@ -24,8 +24,6 @@ namespace Exercise_9_methods_expansion
             //WHILE REPEAT LOOP
             while (sleep == false)
             {
-
-
                 //EXAMPLE 1
                 bool loop1 = false;
                 while (loop1 == false)
@@ -65,19 +63,10 @@ namespace Exercise_9_methods_expansion
                                 loop1 = true;
                                 
                             }
-
-
                         }
-
-
-
-
                         catch (Exception stix)
                         {
-
                             Console.WriteLine("\nERROR \nThe program failed because " + stix.Message + " Please try again.");
-
-
                         }
 
                     }
@@ -89,10 +78,6 @@ namespace Exercise_9_methods_expansion
                     break;
 
                 }
-
-
-
-
                 //EXAMPLE 2
                 bool loop2 = false;
                 while (loop2 == false)
@@ -100,11 +85,6 @@ namespace Exercise_9_methods_expansion
 
                     Console.WriteLine("\nIn this next example you can enter any number including a decimal and the method will input a decimal and output \nan integer rounded up. Type 'exit' to quit the program.");
                     entered = Console.ReadLine();
-
-
-
-
-
                     try
                     {
 
