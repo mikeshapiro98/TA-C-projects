@@ -8,14 +8,10 @@ namespace Exercise_14_abstract_classes
 {
     public class Employee : Person
     {
-
-    
-
         public override void SayName()
         {
             base.SayName();
         }
-
     }
 }
 
