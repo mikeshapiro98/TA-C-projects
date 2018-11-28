@@ -10,14 +10,10 @@ namespace Exercise_15_interface_and_polymorphism
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-
         public virtual void SayName()
         {
             Console.WriteLine("Name: " + FirstName + " " + LastName);
         }
-
-
-
     }
 }
 //1. Create an interface called IQuittable and have it define a void method called Quit().

@@ -8,9 +8,6 @@ namespace Exercise_15_interface_and_polymorphism
 {
     public class Employee : Person, IQuittable
     {
-
-
-
         public override void SayName()
         {
             base.SayName();
@@ -20,7 +17,6 @@ namespace Exercise_15_interface_and_polymorphism
             Console.WriteLine("Is the ruler of the universe");
             Console.WriteLine("\nPress enter to quit.");
         }
-
     }
 }
 
