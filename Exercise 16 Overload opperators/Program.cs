@@ -42,8 +42,6 @@ namespace Exercise_16_Overload_opperators
             }
 
             Console.WriteLine("\nUsing 2 lists and 2 foreach loops the employees will now be compared using the overloaded operator '==' to determine \nif any caller IDs are matching");
-
-
             foreach (Employee e1 in employeeList)
             {
                 foreach (Employee e2 in employeeList2)
@@ -62,31 +60,10 @@ namespace Exercise_16_Overload_opperators
                         continue;
                         //Console.WriteLine(e1.FirstName + " And " + e2.FirstName + " are NOT the same.");
                     }
-
-
-
-
                 }
-
-
-
             }
-
-
-
-
             Console.WriteLine("\nPress enter to quit.");
             Console.ReadLine();
-
-
-          
-
-
-
-
-
-
-
         }
     }
 }
