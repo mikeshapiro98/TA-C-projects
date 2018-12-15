@@ -8,25 +8,16 @@ namespace Excercise_18_Enums
 {
     class Program
     {
-
-
-
-
         static void Main(string[] args)
         {
             //HOW TO CHANGE THE CONSOLE COLOR FOR REFERANCE 
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-
-
             //SLEEP LOOP
             bool sleep = false;
             while (sleep == false)
             {
-
                 Console.WriteLine("Please type what day of the week it is starting with a capital letter for a friendly message");
-
-            
                 //TRY CATCH BLOCK
                 try
                 {
@@ -39,16 +30,11 @@ namespace Excercise_18_Enums
                         DaysOfTheWeek day = (DaysOfTheWeek)Enum.Parse(typeof(DaysOfTheWeek), read);
                         Console.WriteLine("It's " + day + "! That's the best day of the week because it ends in y.");
                         sleep = true;
-
-
                     }
                     else
                     {
                         Console.WriteLine("Please enter an actual day of the week.");
                     }
-
-                   
-
                 }
                 catch (Exception)
                 {
@@ -56,15 +42,11 @@ namespace Excercise_18_Enums
 
                 }
                 //END TRY CATCH
-                
-
             }
             //END SLEEP LOOP
             Console.WriteLine("Thank you for completing this program. Press enter to close the window.");
             Console.ReadLine();
         }
-
-
         public enum DaysOfTheWeek
         {
             Monday,
@@ -74,10 +56,7 @@ namespace Excercise_18_Enums
             Friday,
             Saturday,
             Sunday
-
         }
-
-
     }
 }
 
