@@ -25,11 +25,9 @@ namespace Exercise_24_More_on_Exceptions
             {
 
                 try
-                {
-                    
+                {                   
                     blanket.execute();
                     sleep = true;
-
                 }
                 catch (AgeCheck)
                 {
@@ -39,19 +37,12 @@ namespace Exercise_24_More_on_Exceptions
                 catch (Exception)
                 {
                     WriteLine("\nThere was a general error. Please try again.");
-                }
-               
+                }              
             }
             //END SLEEP LOOP
-
-
             WriteLine("\nAnd so we conclude this program offering an example of exception handeling.");
             ReadLine();
             //End program
-
-
-
-
         }
     }
 }

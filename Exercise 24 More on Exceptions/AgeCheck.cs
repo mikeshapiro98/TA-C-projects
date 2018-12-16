@@ -10,12 +10,8 @@ namespace Exercise_24_More_on_Exceptions
     {
         public AgeCheck()
             : base()
-                {
-                    
+                {                   
                 }
-   
-
-
 }
 }
 //1. Ask the user for his age.
