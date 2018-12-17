@@ -9,6 +9,5 @@ namespace Exercise_19_Structs
     public struct Number
     {
         public decimal Amount { get; set; }
-
     }
 }
