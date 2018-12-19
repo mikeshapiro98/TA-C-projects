@@ -13,7 +13,6 @@ namespace ConsoleApp1
         {
             Console.WriteLine("This porgram is designed to exemplify the use of File I/O");
             Console.WriteLine("Please enter a number to have it logged and then printed back to you");
-
             //SLEEP LOOP
             bool sleep = false;
             while (sleep == false)
@@ -24,7 +23,6 @@ namespace ConsoleApp1
                     int userNum = Convert.ToInt32(Console.ReadLine());
                     string userNumToString = userNum.ToString();
                     File.WriteAllText(@"C:\Users\micha\OneDrive\Desktop\Logs\log.txt", userNumToString);
-
                     string reader = File.ReadAllText(@"C:\Users\micha\OneDrive\Desktop\Logs\log.txt");
                     Console.WriteLine("\nThe number contained in the file that was just logged is " + reader + ". Press enter to quit");
                     sleep = true;
@@ -32,11 +30,9 @@ namespace ConsoleApp1
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("Please only enter only a whole number. Please try again by entering a new number now.");
-                    
+                    Console.WriteLine("Please only enter only a whole number. Please try again by entering a new number now.");                    
                 }
                 //END TRY CATCH BLOCK
-
             }
             //END SLEEP LOOP
         }
