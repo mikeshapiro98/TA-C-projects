@@ -32,15 +32,12 @@ namespace Exercise_6_Iterations
             // foreach (var adders in stringAdds)
             for (int i = 0; i < stringAdds.Length; i++)
             {
-
                 stringAdds[i] = (stringAdds[i] + userString);
                 Console.WriteLine(stringAdds[i]);
-
-
                 //newUserString[i] + userString;  //FOR REFERANCE PURPOSES
                 //Console.WriteLine(stringAdds[i] + userString);
             }
-            //Console.ReadLine();
+            Console.ReadLine();
 
             ////END FIRST REQUIREMENT
 
@@ -50,16 +47,11 @@ namespace Exercise_6_Iterations
             ////END TRANSITION
 
             ////SECOND REQUIREMENT    CREATE AN INFINITE LOOP
-
-            ///*
-
             //for (int i = 0; i < 1; i++)
             //{
             //    Console.WriteLine("This loop is infinite!");
             //    i--;
             //}
-
-            //*/
 
             //Console.WriteLine("This is an example of an infinite loop. This loop will not apear on the console in order to spare you the horrors \nof infinite time and space. Press continue to the next requirement.");
             //Console.ReadLine();
@@ -113,9 +105,6 @@ namespace Exercise_6_Iterations
             ////FIFTH REQUIREMENT USING THE <= OPPERATOR ITERATION
 
             //Console.WriteLine("This will count the amount of iterations and print them to the screen using the <= operator as the iterator.");
-
-
-
             //for (int i = 0; i <= 10; i++)
             //{
             //    Console.WriteLine(i);
