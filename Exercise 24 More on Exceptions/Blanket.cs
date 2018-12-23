@@ -28,8 +28,7 @@ namespace Exercise_24_More_on_Exceptions
                 }
             }
             while(!tryit)
-            {
-                
+            {               
                 throw new Exception();
             }
 

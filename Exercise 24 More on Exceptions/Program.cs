@@ -23,7 +23,6 @@ namespace Exercise_24_More_on_Exceptions
             bool sleep = false;
             while(sleep == false)
             {
-
                 try
                 {                   
                     blanket.execute();

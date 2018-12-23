@@ -8,15 +8,9 @@ namespace Exercise_23_Extras
 {
     public class Superhero
     {
-
-
         public string name { get; set; }
         public string city { get; set; }
         public string superpower { get; set; }
-
-
-
-
         public Superhero(string Name, string Superpower) : this(Name, "Metropolis", Superpower)
         {
         }
@@ -27,17 +21,11 @@ namespace Exercise_23_Extras
         {
            
         }
-        public Superhero(string Name, string City, string Superpower )
+        public Superhero(string Name, string City, string Superpower)
         {
-
             name = Name;
             city = City;
             superpower = Superpower;
         }
-
-     
-        
-
-
     }
 }

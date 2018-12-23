@@ -18,28 +18,28 @@ namespace Exercise_6_Iterations
 
             ////FIRST REQUIREMENT ADD USER STRINGS TOGETHER
 
-            //string[] stringAdds = { "This is an \t  | ", "array of stings   | ", "that will be \t  | ", "presented with the| ", "user input at \t  | ", "the end of \t  | ", "every three words | ", "Your input was: " };
-            ////string[] newUserString = new string[] { };
-            //Console.WriteLine("Add some text and press enter to have that text added to an array or strings and printed. Then press enter");
-            //string userString = Console.ReadLine();
-            ////List<string> newUserString = new List<string>(); FOR REFERANCE PURPOSES
+            string[] stringAdds = { "This is an \t  | ", "array of stings   | ", "that will be \t  | ", "presented with the| ", "user input at \t  | ", "the end of \t  | ", "every three words | ", "Your input was: " };
+            //string[] newUserString = new string[] { };
+            Console.WriteLine("Add some text and press enter to have that text added to an array or strings and printed. Then press enter");
+            string userString = Console.ReadLine();
+            //List<string> newUserString = new List<string>(); FOR REFERANCE PURPOSES
 
-            //for (int i = 0; i < stringAdds.Length; i++)
-            //{
-            //    Console.WriteLine(stringAdds[i]);
-            //}
+            for (int i = 0; i < stringAdds.Length; i++)
+            {
+                Console.WriteLine(stringAdds[i]);
+            }
 
-            //// foreach (var adders in stringAdds)
-            //for (int i = 0; i < stringAdds.Length; i++)
-            //{
+            // foreach (var adders in stringAdds)
+            for (int i = 0; i < stringAdds.Length; i++)
+            {
 
-            //    stringAdds[i] = (stringAdds[i] + userString);
-            //    Console.WriteLine(stringAdds[i]);
+                stringAdds[i] = (stringAdds[i] + userString);
+                Console.WriteLine(stringAdds[i]);
 
 
-            //    //newUserString[i] + userString;  //FOR REFERANCE PURPOSES
-            //    //Console.WriteLine(stringAdds[i] + userString);
-            //}
+                //newUserString[i] + userString;  //FOR REFERANCE PURPOSES
+                //Console.WriteLine(stringAdds[i] + userString);
+            }
 
 
 
