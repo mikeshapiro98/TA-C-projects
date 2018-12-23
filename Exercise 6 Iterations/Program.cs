@@ -40,12 +40,6 @@ namespace Exercise_6_Iterations
                 //newUserString[i] + userString;  //FOR REFERANCE PURPOSES
                 //Console.WriteLine(stringAdds[i] + userString);
             }
-
-
-
-
-
-
             //Console.ReadLine();
 
             ////END FIRST REQUIREMENT
@@ -307,7 +301,6 @@ namespace Exercise_6_Iterations
                         starch);
                 }
             }
-
             //for (int s = 0; s < finalList.Count; s++)
             //// foreach (string starch in finalList)
             //{
