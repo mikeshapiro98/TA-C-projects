@@ -11,35 +11,26 @@ namespace Exercise_5_Arrays_and_Lists
         static void Main(string[] args)
         {
             //ARRAYS AND LISTS EXERCISE
-
             Console.WriteLine("In this exercise we'll be going over some arrays and lists. Press enter to start.");
             Console.ReadLine();
-
             //STRING ARRAY
-
             bool valid = false;
             while (valid == false)
             { 
-
             string[] stringArray = new string[] { "This is index 0", "This is index 1", "This is index 2", "This is index 3", "This is index 4", "This is index 5", "This is index 6" };
-
             Console.WriteLine("First please type in an index place between 0 and 6 to see what's in that index and press enter");
                 string testIndex = Console.ReadLine();
                 int userIndex;
-                bool test = int.TryParse(testIndex, out userIndex);
-                
+                bool test = int.TryParse(testIndex, out userIndex);                
                 if(test == false)
-                {
-                    
+                {                    
                     Console.WriteLine("There was an error. Please enter only whole numbers between 0 and 6");
                     //break;
                 }
                 else if (userIndex < 0 || userIndex > 6)
-                {
-                    
+                {                    
                     Console.WriteLine("There was an error. Please enter only whole numbers between 0 and 6");
                 }
-
                 else
                 {
                     Console.WriteLine("You entered index number " + userIndex +". The informaton in that index is: \n" + stringArray[userIndex] + "\nPress enter to continue");
@@ -48,14 +39,11 @@ namespace Exercise_5_Arrays_and_Lists
                 }
             }
             //END STRING ARRAY
-
             //TRANSITION
             Console.WriteLine("That was fun. Now let's try out an integer array. Press enter to continue.");
             Console.ReadLine(); 
-            //END TRANSITION
-            
+            //END TRANSITION            
             //INT ARRAY 
-
             bool valid2 = false;
             while (valid2 == false)
             {
@@ -64,30 +52,22 @@ namespace Exercise_5_Arrays_and_Lists
                 string testIndex2 = Console.ReadLine();
                 int userIndex2;
                 bool test2 = int.TryParse(testIndex2, out userIndex2);
-
                 if (test2 == false)
-                {
-                    
+                {                    
                     Console.WriteLine("There was an error. Please enter only whole numbers between 0 and 6");
                     //break;
                 }
                 else if (userIndex2 < 0 || userIndex2 > 6)
-                {
-                    
+                {                    
                     Console.WriteLine("There was an error. Please enter only whole numbers between 0 and 6");
                 }
-
                 else
                 {
                     Console.WriteLine("You entered index number " + userIndex2 + ". The informaton in that index is: \n" + intArray[userIndex2] + "\nPress enter to continue");
                     Console.ReadLine();
                     valid2 = true;
                 }
-
             }
-
-
-
             //END INT ARRAY
 
 
