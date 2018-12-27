@@ -15,17 +15,14 @@ namespace Exercise_17_Generics
         public void SayName()
         {
             Console.WriteLine("\nName: " + FirstName + " " + LastName /*+ " " + callerID*/);
-
         }
         public void copy()
         {
             Console.WriteLine("\nList: ");
             for (int i = 0 ; i < things.Count; i++)
             Console.WriteLine(things[i]);
-
         }
     }
-
 }
 //1. Make the Employee class take a generic type parameter.
 
