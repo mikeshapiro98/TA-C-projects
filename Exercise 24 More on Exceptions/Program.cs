@@ -15,10 +15,8 @@ namespace Exercise_24_More_on_Exceptions
             WriteLine("Hey there. Fancy meeting you here again. This is another program. Are you ready for it? Press enter.");
             ReadLine();
             //END INTRO
-
             //Start program
             Blanket blanket = new Blanket();
-
             //SLEEP LOOP
             bool sleep = false;
             while(sleep == false)
