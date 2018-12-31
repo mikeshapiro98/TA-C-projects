@@ -15,6 +15,10 @@ namespace Exercise_19_Structs
             myLittleNumber.Amount = 1.37m;
             Console.WriteLine("\n$" + myLittleNumber.Amount + " is the average cost of a 4Ib. loaf of bread the year I was born. \nPress enter to close the window.");
             Console.ReadLine();
+            Specimen specimen = new Specimen();
+            specimen.Notice = "Do not move!";
+            Console.WriteLine(specimen.Notice);
+            Console.ReadLine();
         }
     }
 }

@@ -10,4 +10,9 @@ namespace Exercise_19_Structs
     {
         public decimal Amount { get; set; }
     }
+
+    public struct Specimen
+    {
+        public string Notice { get; set; }
+    }
 }
