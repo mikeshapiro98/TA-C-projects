@@ -11,15 +11,13 @@ namespace Exercise_8_Classes_and_Objects
     {
         static void Main(string[] args)
         {
-
-                //INTRO
+            //INTRO
             packet packet = new packet();
             bool sleep = false;
             Console.WriteLine("Hello! This porgram will ask you for a whole number. It will then perform 3 mathmatical methods on that number \nand return the answers to each one. Press enter to start");
             Console.ReadLine();
-                //END INTRO    
-            
-            
+            //END INTRO    
+
             //WHILE REPEAL LOOP
             while (sleep == false)
             {
@@ -27,7 +25,10 @@ namespace Exercise_8_Classes_and_Objects
                 Console.WriteLine("\nPlease enter a whole number or type exit to end the program.");
 
                 string entered = Console.ReadLine();
-
+                classB b = new classB();
+                int testInt = b.thisProp = 5; //This sets the class property to 5.
+                Console.WriteLine(testInt);
+                Console.ReadLine();
                 try
                 {
 
@@ -51,32 +52,25 @@ namespace Exercise_8_Classes_and_Objects
                         //packet.multiply(enteredNum);
                         int write3 = packet.multiply(enteredNum);
                         Console.WriteLine("\n" + enteredNum + " * 6 is: " + write3);
-
-
-
                     }
 
                 }
-                 catch (Exception /*stix*/)
+                catch (Exception /*stix*/)
                 {
-
                     Console.WriteLine("\nERROR \nPlease enter only whole numbers or 'exit'");
                     //Console.WriteLine(stix.Message); //TO WRITE A DEFAULT MESSAGE
                     //Console.ReadLine();
                 }
-
-
-
-               
-
-
-
             }
             //END WHILE REPEAT LOOP
-
             Console.WriteLine("\nThank you for completing this program. Goodbye!");
             Console.ReadLine();
-
         }
+        }
+   
+    }
+    class classB
+    {
+        public int thisProp { get; set; }
     }
 }
