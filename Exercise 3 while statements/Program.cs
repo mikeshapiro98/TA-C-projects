@@ -44,7 +44,6 @@ namespace CS_Exercise_3_while_statements
                 //    introStart: //Label (Bad practice)
                 //    Console.WriteLine("Time to try out some while loops. Are you ready?");
                 //    string userResponse = Console.ReadLine();
-
                 //    //Failed experiment!
                 //    //string[] yes = { "y", "e", "s" };
                 //    //Console.WriteLine(yes[1]);
@@ -73,11 +72,6 @@ namespace CS_Exercise_3_while_statements
 
 
                 //    //FIRST WHILE STATEMENT!
-
-
-
-
-
                 //    Console.WriteLine("Okay first up, let's test a while statment. Press Enter to start");
                 //    Console.ReadLine();
 
