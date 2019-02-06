@@ -11,33 +11,33 @@ namespace Exercise_6_Iterations
         static void Main(string[] args)
         {
 
-            //INTRODUCTION
-            Console.WriteLine("Hello. This is a program that meant to show the use of iteration in C#. Press Enter to start.");
-            Console.ReadLine();
-            //END INTRODUCTION
+            ////INTRODUCTION
+            //Console.WriteLine("Hello. This is a program that meant to show the use of iteration in C#. Press Enter to start.");
+            //Console.ReadLine();
+            ////END INTRODUCTION
 
-            ////FIRST REQUIREMENT ADD USER STRINGS TOGETHER
+            //////FIRST REQUIREMENT ADD USER STRINGS TOGETHER
 
-            string[] stringAdds = { "This is an \t  | ", "array of stings   | ", "that will be \t  | ", "presented with the| ", "user input at \t  | ", "the end of \t  | ", "every three words | ", "Your input was: " };
-            //string[] newUserString = new string[] { };
-            Console.WriteLine("Add some text and press enter to have that text added to an array or strings and printed. Then press enter");
-            string userString = Console.ReadLine();
-            //List<string> newUserString = new List<string>(); FOR REFERANCE PURPOSES
+            //string[] stringAdds = { "This is an \t  | ", "array of stings   | ", "that will be \t  | ", "presented with the| ", "user input at \t  | ", "the end of \t  | ", "every three words | ", "Your input was: " };
+            ////string[] newUserString = new string[] { };
+            //Console.WriteLine("Add some text and press enter to have that text added to an array or strings and printed. Then press enter");
+            //string userString = Console.ReadLine();
+            ////List<string> newUserString = new List<string>(); FOR REFERANCE PURPOSES
 
-            for (int i = 0; i < stringAdds.Length; i++)
-            {
-                Console.WriteLine(stringAdds[i]);
-            }
+            //for (int i = 0; i < stringAdds.Length; i++)
+            //{
+            //    Console.WriteLine(stringAdds[i]);
+            //}
 
-            // foreach (var adders in stringAdds)
-            for (int i = 0; i < stringAdds.Length; i++)
-            {
-                stringAdds[i] = (stringAdds[i] + userString);
-                Console.WriteLine(stringAdds[i]);
-                //newUserString[i] + userString;  //FOR REFERANCE PURPOSES
-                //Console.WriteLine(stringAdds[i] + userString);
-            }
-            Console.ReadLine();
+            //// foreach (var adders in stringAdds)
+            //for (int i = 0; i < stringAdds.Length; i++)
+            //{
+            //    stringAdds[i] = (stringAdds[i] + userString);
+            //    Console.WriteLine(stringAdds[i]);
+            //    //newUserString[i] + userString;  //FOR REFERANCE PURPOSES
+            //    //Console.WriteLine(stringAdds[i] + userString);
+            //}
+            //Console.ReadLine();
 
             ////END FIRST REQUIREMENT
 
@@ -195,101 +195,101 @@ namespace Exercise_6_Iterations
 
             ////NINTH REQUIREMENT  DUPLICATED INDICIES
 
-            //List<string> veggies = new List<string>() { "carrot", "turnip", "pepper", "celery", "kale", "carrot", "turnip", "pepper", "celery", "kale" };
-            //// bool nest = true;
-            //bool sleep = true;
-            //while (sleep == true)
-            //{
-            //    Console.WriteLine("Just like last time, this example will ask you to choose a term from a list, except this time each term is dulpicated\nwithin its list. Select one to see both of its indices");
-            //    Console.WriteLine("Your options are:");
-            //    Console.WriteLine("carrot");
-            //    Console.WriteLine("turnip");
-            //    Console.WriteLine("pepper");
-            //    Console.WriteLine("celery");
-            //    Console.WriteLine("kale");
-            //    Console.WriteLine("Please type in one of the options.");
-            //    string userVeg = Console.ReadLine();
-
-
-            //    if (!veggies.Contains(userVeg))
-            //    // if (userVeg != "carrot" && userVeg != "turnip" && userVeg != "pepper" && userVeg != "celery" && userVeg != "kale")
-            //    {
-            //        Console.WriteLine("There was an error. Please only search from the given list and make sure it's spelled correctly. As punishment \npress enter");
-            //        Console.ReadLine();
-            //        //continue;
-            //    }
-
-
-            //    else
-            //    {
-            //        Console.WriteLine("You selected " + userVeg + ". The indices of that veggie are: ");
-            //        for (int v = 0; v < veggies.Count; v++)
-            //        {
-
-
-            //            if (veggies[v] == userVeg)
-            //            {
-            //                Console.WriteLine(v);
-            //                sleep = false;
-
-            //            }
-
-
-            //        }
-            //    }
-
-
-
-            //    //for (int v = 5; v <= 9; v++)
-            //    //{
-
-            //    //    if (veggies[v] == userVeg)
-            //    //    {
-            //    //        Console.WriteLine("and");
-            //    //        Console.WriteLine(v);
-            //    //        sleep = false;
-            //    //        break;
-
-            //    //    }
-
-            //    //}
-
-
-            //}
-            //Console.WriteLine("We're alost done. Just a few more times of pressing enter.");
-            //Console.ReadLine();
-
-            ////END NINTH REQUIREMENT
-
-            ////TENTH REQUIREMENT
-
-            //Console.WriteLine("Yet again this requirement has already been fulfilled. Kutos! PRESS ENTER.");
-            //Console.ReadLine();
-
-            ////END TENTH REQUIREMENT  FOR EACH STATMENT  
-
-            // ELEVENTH REQUIREMENT  FIND DUPLICATES 
-            List<string> finalList = new List<string>() { "spagettie", "matzo", "bread", "potatos", "spagettie", "rice", "cake", "bread", "dumplings", "polenta" };
-            List<string> addList = new List<string>();
-
-            // bool tester = false;
-
-            Console.WriteLine("For our final iteration we will iterate through a loop and print each string in a list as well as print if the\nstring is a duplicate within the list. Press EnTeR to run the loop.");
-            Console.ReadLine();
-
-            foreach (var starch in finalList)
+            List<string> veggies = new List<string>() { "carrot", "turnip", "pepper", "celery", "kale", "carrot", "turnip", "pepper", "celery", "kale" };
+            // bool nest = true;
+            bool sleep = true;
+            while (sleep == true)
             {
-                if (!addList.Contains(starch))
+                Console.WriteLine("Just like last time, this example will ask you to choose a term from a list, except this time each term is dulpicated\nwithin its list. Select one to see both of its indices");
+                Console.WriteLine("Your options are:");
+                Console.WriteLine("carrot");
+                Console.WriteLine("turnip");
+                Console.WriteLine("pepper");
+                Console.WriteLine("celery");
+                Console.WriteLine("kale");
+                Console.WriteLine("Please type in one of the options.");
+                string userVeg = Console.ReadLine();
+
+
+                if (!veggies.Contains(userVeg))
+                // if (userVeg != "carrot" && userVeg != "turnip" && userVeg != "pepper" && userVeg != "celery" && userVeg != "kale")
                 {
-                    addList.Add(starch);
-                    Console.WriteLine(starch);
+                    Console.WriteLine("There was an error. Please only search from the given list and make sure it's spelled correctly. As punishment \npress enter");
+                    Console.ReadLine();
+                    //continue;
                 }
+
+
                 else
                 {
-                    Console.WriteLine("{0} has already been listed",
-                        starch);
+                    Console.WriteLine("You selected " + userVeg + ". The indices of that veggie are: ");
+                    for (int v = 0; v < veggies.Count; v++)
+                    {
+
+
+                        if (veggies[v] == userVeg)
+                        {
+                            Console.WriteLine(v);
+                            sleep = false;
+
+                        }
+
+
+                    }
                 }
-            }
+
+
+
+                //    //for (int v = 5; v <= 9; v++)
+                //    //{
+
+                //    //    if (veggies[v] == userVeg)
+                //    //    {
+                //    //        Console.WriteLine("and");
+                //    //        Console.WriteLine(v);
+                //    //        sleep = false;
+                //    //        break;
+
+                //    //    }
+
+                //    //}
+
+
+                //}
+                //Console.WriteLine("We're alost done. Just a few more times of pressing enter.");
+                //Console.ReadLine();
+
+                ////END NINTH REQUIREMENT
+
+                ////TENTH REQUIREMENT
+
+                //Console.WriteLine("Yet again this requirement has already been fulfilled. Kutos! PRESS ENTER.");
+                //Console.ReadLine();
+
+                ////END TENTH REQUIREMENT  FOR EACH STATMENT  
+
+                // ELEVENTH REQUIREMENT  FIND DUPLICATES 
+            //    List<string> finalList = new List<string>() { "spagettie", "matzo", "bread", "potatos", "spagettie", "rice", "cake", "bread", "dumplings", "polenta" };
+            //List<string> addList = new List<string>();
+
+            //// bool tester = false;
+
+            //Console.WriteLine("For our final iteration we will iterate through a loop and print each string in a list as well as print if the\nstring is a duplicate within the list. Press EnTeR to run the loop.");
+            //Console.ReadLine();
+
+            //foreach (var starch in finalList)
+            //{
+            //    if (!addList.Contains(starch))
+            //    {
+            //        addList.Add(starch);
+            //        Console.WriteLine(starch);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("{0} has already been listed",
+            //            starch);
+            //    }
+            //}
             //for (int s = 0; s < finalList.Count; s++)
             //// foreach (string starch in finalList)
             //{
@@ -309,7 +309,7 @@ namespace Exercise_6_Iterations
 
             //    }
 
-            //}
+            }
 
             Console.WriteLine("\nFingers tired yet? Press enter.");
             Console.ReadLine();
