@@ -22,10 +22,8 @@ namespace TwentyOne
 
         static void Main(string[] args)
         {
-
             const string casinoName = "Grand Hotel and Casino"; //this is an example of a constant. (cannot be changed). It won't make a difference in this code, but if we wanted to use this variable a lot with a fear of it being changed, that is when this is useful. If someone else changed the code of a constant that was used frequently it would screw up the whole program. 
                                                                 // While this program is running, this var wll never change.
-
             //WELCOME MESSAGE
             System.Console.WriteLine("Hello! Welcome to the {0}. Let's start by telling me your name cowboy", casinoName); //If you tool using System out, you could use the whole path here and it would still work. You could also use using System.Console, and remove the console. part.
             string playerName = Console.ReadLine();
@@ -46,7 +44,6 @@ namespace TwentyOne
                 return; 
 
             }
-
             bool validAnswer = false;
             int bank = 0;
             while (!validAnswer)
@@ -58,8 +55,6 @@ namespace TwentyOne
                     Console.WriteLine("Wrong stupid! Try again. Whole numbers only and no negatives.");
                 }
             }
-
-
             Console.WriteLine("Excellent {0}! Would you like to play a game right now?", playerName);
             string answer = Console.ReadLine().ToLower();
 
@@ -112,9 +107,6 @@ namespace TwentyOne
 
             Console.WriteLine("Feel free to look around the casino. Bye for now.");
             Console.ReadLine();
-
-
-
         }
 
 

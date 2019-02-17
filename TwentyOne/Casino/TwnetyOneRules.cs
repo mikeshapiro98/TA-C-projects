@@ -54,9 +54,6 @@ namespace Casino.TwentyOne
             return result;
 
         }
-
-
-
         public static bool CheckForBlackJack(List<Card> Hand)
         {
             int[] possibleValues = GetAllPossibleHandValues(Hand);
