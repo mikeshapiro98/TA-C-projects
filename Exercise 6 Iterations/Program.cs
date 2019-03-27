@@ -195,69 +195,67 @@ namespace Exercise_6_Iterations
 
             ////NINTH REQUIREMENT  DUPLICATED INDICIES
 
-            //List<string> veggies = new List<string>() { "carrot", "turnip", "pepper", "celery", "kale", "carrot", "turnip", "pepper", "celery", "kale" };
-            //// bool nest = true;
-            //bool sleep = true;
-            //while (sleep == true)
-            //{
-            //    Console.WriteLine("Just like last time, this example will ask you to choose a term from a list, except this time each term is dulpicated\nwithin its list. Select one to see both of its indices");
-            //    Console.WriteLine("Your options are:");
-            //    Console.WriteLine("carrot");
-            //    Console.WriteLine("turnip");
-            //    Console.WriteLine("pepper");
-            //    Console.WriteLine("celery");
-            //    Console.WriteLine("kale");
-            //    Console.WriteLine("Please type in one of the options.");
-            //    string userVeg = Console.ReadLine();
+            List<string> veggies = new List<string>() { "carrot", "turnip", "pepper", "celery", "kale", "carrot", "turnip", "pepper", "celery", "kale" };
+            // bool nest = true;
+            bool sleep = true;
+            while (sleep == true)
+            {
+                Console.WriteLine("Just like last time, this example will ask you to choose a term from a list, except this time each term is dulpicated\nwithin its list. Select one to see both of its indices");
+                Console.WriteLine("Your options are:");
+                Console.WriteLine("carrot");
+                Console.WriteLine("turnip");
+                Console.WriteLine("pepper");
+                Console.WriteLine("celery");
+                Console.WriteLine("kale");
+                Console.WriteLine("Please type in one of the options.");
+                string userVeg = Console.ReadLine();
 
 
-            //    if (!veggies.Contains(userVeg))
-            //    // if (userVeg != "carrot" && userVeg != "turnip" && userVeg != "pepper" && userVeg != "celery" && userVeg != "kale")
-            //    {
-            //        Console.WriteLine("There was an error. Please only search from the given list and make sure it's spelled correctly. As punishment \npress enter");
-            //        Console.ReadLine();
-            //        //continue;
-            //    }
+                if (!veggies.Contains(userVeg))
+                // if (userVeg != "carrot" && userVeg != "turnip" && userVeg != "pepper" && userVeg != "celery" && userVeg != "kale")
+                {
+                    Console.WriteLine("There was an error. Please only search from the given list and make sure it's spelled correctly. As punishment \npress enter");
+                    Console.ReadLine();
+                    //continue;
+                }
+                else
+                {
+                    Console.WriteLine("You selected " + userVeg + ". The indices of that veggie are: ");
+                    for (int v = 0; v < veggies.Count; v++)
+                    {
 
 
-            //    else
-            //    {
-            //        Console.WriteLine("You selected " + userVeg + ". The indices of that veggie are: ");
-            //        for (int v = 0; v < veggies.Count; v++)
-            //        {
+                        if (veggies[v] == userVeg)
+                        {
+                            Console.WriteLine(v);
+                            sleep = false;
+
+                        }
 
 
-            //            if (veggies[v] == userVeg)
-            //            {
-            //                Console.WriteLine(v);
-            //                sleep = false;
-
-            //            }
-
-
-            //        }
-            //    }
+                    }
+                }
 
 
 
-            //    //for (int v = 5; v <= 9; v++)
-            //    //{
+                //for (int v = 5; v <= 9; v++)
+                //{
 
-            //    //    if (veggies[v] == userVeg)
-            //    //    {
-            //    //        Console.WriteLine("and");
-            //    //        Console.WriteLine(v);
-            //    //        sleep = false;
-            //    //        break;
+                //    if (veggies[v] == userVeg)
+                //    {
+                //        Console.WriteLine("and");
+                //        Console.WriteLine(v);
+                //        sleep = false;
+                //        break;
 
-            //    //    }
+                //    }
 
-            //    //}
+                //}
 
 
-            //}
-            //Console.WriteLine("We're alost done. Just a few more times of pressing enter.");
-            //Console.ReadLine();
+            }
+            Console.WriteLine("We're alost done. Just a few more times of pressing enter.");
+            Console.ReadLine();
 
             ////END NINTH REQUIREMENT
 
@@ -311,16 +309,16 @@ namespace Exercise_6_Iterations
 
         }
 
-            //Console.WriteLine("\nFingers tired yet? Press enter.");
-            //Console.ReadLine();
-            ////ELEVENTH REQUIRMENT 
+        //Console.WriteLine("\nFingers tired yet? Press enter.");
+        //Console.ReadLine();
+        ////ELEVENTH REQUIRMENT 
 
-            ////CONCLUSION
-            //Console.WriteLine("This concludes this program exemplifying iterations. ONE LAST TIME... press enter.");
-            //Console.ReadLine();
+        ////CONCLUSION
+        //Console.WriteLine("This concludes this program exemplifying iterations. ONE LAST TIME... press enter.");
+        //Console.ReadLine();
 
-            //END CONCLUSION
+        //END CONCLUSION
 
-        }
+    }
     }
 
