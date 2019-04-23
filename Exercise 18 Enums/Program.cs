@@ -22,7 +22,6 @@ namespace Excercise_18_Enums
                 try
                 {
                     string read = Console.ReadLine();
-
                     //GATE TO PREVENT NUMBERS FROM BEING SUCCESSFUL 
                     bool res = int.TryParse(read, out int num1);
                     if (res == false)
@@ -39,7 +38,6 @@ namespace Excercise_18_Enums
                 catch (Exception)
                 {
                     Console.WriteLine("Please enter an actual day of the week.");
-
                 }
                 //END TRY CATCH
             }
