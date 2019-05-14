@@ -10,7 +10,8 @@ namespace Exercise_14_abstract_classes
     {
         public override void SayName()
         {
-            base.SayName();
+            //base.SayName();
+            Console.WriteLine("Name: " + FirstName + " " + LastName);
         }
     }
 }

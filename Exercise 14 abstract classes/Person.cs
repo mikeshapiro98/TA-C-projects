@@ -11,10 +11,10 @@ namespace Exercise_14_abstract_classes
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public virtual void SayName()
-        {
-            Console.WriteLine("Name: " + FirstName +" "+LastName);
-        }
+        public abstract void SayName();
+        //{
+        //    Console.WriteLine("Name: " + FirstName +" "+LastName);
+        //}
     }
 }
 //1. Create an abstract class called Person with two properties: string firstName and string lastName.
