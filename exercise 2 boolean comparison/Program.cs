@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace exercise_2_boolean_comparison
 {
     class Program
@@ -107,5 +108,6 @@ namespace exercise_2_boolean_comparison
                 ////END FINAL TRANSITION!
 
             }
+        }
     }
 }
